@@ -138,12 +138,12 @@ def numscankced():
                         print("")
                         print(
                             f"\033[0;32m[\033[0;31mi\033[0;32m]\033[1;32m Number Found On instagram ---> {word}")
-                        file.write("Number Found On instagram ---> "+word)
+                        file.write("Number Found On instagram ---> "+word+"\n")
                     if ('"message": "No users found", "status": "fail"') in js:
                         print("")
                         print(
                             f"\033[0;32m[\033[0;31mi\033[0;32m]\033[0;31m Number Not Found On instagram ---> {word}")
-                        file.write("Number Not Found On instagram ---> "+word)
+                        file.write("Number Not Found On instagram ---> "+word+"\n")
                     if (
                     '"message": "We have encountered an error while resetting your password. Please try again."') in js:
                         print("")
